@@ -35,7 +35,7 @@ $pedidos = $conexao->query($sql);
     <a href="excluirPedido.php?id=<?= $p['pedido_id'] ?>" onclick="return confirm('Tem certeza?')">Excluir Pedido</a>
 <?php endwhile; ?>
 
-<br><a href="index.html">Voltar ao menu</a>
+<br><a href="index.html">Voltar ao inicio</a>
 </body>
 </html>
 

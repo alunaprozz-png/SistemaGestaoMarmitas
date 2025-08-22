@@ -1,11 +1,11 @@
 <?php
 include("conexao.php");
 
-$id = intval($_POST['id']);
-$nome = trim($_POST['nome']);
-$email = trim($_POST['email']);
-$telefone = trim($_POST['telefone']);
-$endereco = trim($_POST['endereco']);
+$id = $_POST['id'];
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$endereco = $_POST['endereco'];
 
 $stmt = $conexao->prepare("UPDATE clientes SET nome=?, email=?, telefone=?, endereco=? WHERE id=?");
 $stmt->bind_param("ssssi", $nome, $email, $telefone, $endereco, $id);

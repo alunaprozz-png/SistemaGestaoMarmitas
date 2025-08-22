@@ -17,8 +17,8 @@ $produtos = $resultado->fetch_assoc();
 </head>
 
 <body>
-    <form action="./atualizar.php" method="post">
-        <h2> Editar produto existente no estoque </h2>
+    <form action="./atualizarProdutos.php" method="post">
+        <h2> Editar produto existente no estoque </h2><br>
 
         <input type="hidden" name="id" value="<?= $produtos['id']; ?>">
 
@@ -30,3 +30,51 @@ $produtos = $resultado->fetch_assoc();
     </form>
 </body>
 </html>
+
+<style>
+    body {
+        width: 100%;
+        margin: auto;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    form {
+        padding: 25px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #004797ff;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #003366;
+    }
+    a {
+        text-decoration: none;
+        color: #004797ff;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>

@@ -37,7 +37,7 @@ $result = $conexao->query("SELECT * FROM clientes");
             </tr>
         <?php endwhile; ?>
     </table>
-    <a href="index.html">Voltar ao menu</a>
+    <a href="index.html">Voltar ao inicio</a>
 </body>
 </html>
 

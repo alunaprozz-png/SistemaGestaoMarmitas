@@ -34,7 +34,7 @@ $produtos = $conexao->query("SELECT * FROM produtos");
         <br>
         <input type="submit" value="Realizar Pedido">
     </form>
-    <a href="index.html">Voltar ao menu</a>
+    <a href="index.html">Voltar ao inicio</a>
 </body>
 </html>
 
